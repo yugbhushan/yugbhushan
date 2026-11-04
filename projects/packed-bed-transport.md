@@ -13,12 +13,12 @@ How do particle shape and wall channeling affect pressure drop and flow distribu
 
 | Component | Approach |
 | :--- | :--- |
-| Governing model | Ergun equation, derived from a shell momentum balance |
+| Governing model | Ergun equation, connected to a shell momentum balance |
 | Particle shape | Sphericity-based extension for non-spherical particles |
 | Implementation | Python pressure-drop model |
 | Wall effects | Benenati–Brosilow correlation |
 
-## My contribution
+## Original project work
 
 1. Derived the pressure-drop relation from a shell momentum balance.
 2. Extended the model to account for particle sphericity.
@@ -35,8 +35,35 @@ This percentage describes the specific model comparison; it is not a general res
 
 The analysis brings particle geometry and near-wall flow into the assessment of packed-bed resistance and design.
 
-## Reproducibility
+## Reproducible implementation
 
-This repository currently contains the project summary. The original Python model, derivation, bed and fluid properties, operating conditions, correlation implementation, and plots are needed to reproduce the comparison.
+### Run the pressure-drop study
 
-*Project scope and results are drawn from my CV; the analysis has not been independently rerun in this repository.*
+[Python implementation](../code/packed_bed.py) · [Installation](../REPRODUCING.md) · [Output tables](../results/packed-bed)
+
+```sh
+python code/packed_bed.py
+```
+
+The uniform-bed example evaluates the positive pressure-loss gradient $G=A U+B U^2$, where $U$ is superficial velocity. With void fraction $\varepsilon$, volume-equivalent diameter $d$, and sphericity $\phi$, the solver uses
+
+$$ A=\frac{150\mu(1-\varepsilon)^2}{(\phi d)^2\varepsilon^3}, \qquad B=\frac{1.75\rho(1-\varepsilon)}{\phi d\varepsilon^3}. $$
+
+The linear term represents viscous resistance and the quadratic term represents inertial resistance. The force balance gives the pressure-loss structure. The numerical coefficients are empirical Ergun coefficients.
+
+| Example input | Value |
+| --- | --- |
+| Diameter and bulk void fraction | 3 mm and 0.40 |
+| Fluid density and viscosity | 1.2 kg/m³ and 0.000018 Pa·s |
+| Superficial velocity | 0–0.5 m/s |
+| Shape comparison | Sphericities 1.0 and 0.65 |
+
+At 0.2 m/s, changing only the shape factor increases pressure drop by **100.44%**. With the other inputs held fixed, the pressure ratio lies between $1/\phi$ and $1/\phi^2$. For $\phi=0.65$, even the viscous limit is about a 137% increase. The historical 190% increase therefore needs additional original inputs, such as a difference in void fraction or equivalent diameter, or a different model or comparison definition.
+
+### Wall sensitivity
+
+A second calculation divides a 30 mm radius bed into 100 annuli. Voidage rises towards the wall according to the illustrative profile $0.4+0.18\exp[-(R-r)/d]$. For a candidate common gradient, the solver finds each annulus's local velocity and uses its area as a weight. A scalar root solve chooses the gradient that recovers the specified mean velocity. The example yields **419.73 Pa/m** at 0.2 m/s. Higher local voidage permits more flow near the wall.
+
+![Uniform pressure curves and radial wall-flow sensitivity](../results/packed-bed/figure.svg)
+
+The original project used the Benenati–Brosilow correlation. The executable wall example is a separate sensitivity study with an explicitly chosen voidage profile. Direct comparison to the original requires its radial correlation parameters and particle and fluid properties.

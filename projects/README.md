@@ -11,4 +11,6 @@ A collection of my academic project summaries in chemical engineering, scientifi
 | [Disc-brake thermal analysis](brake-thermal-analysis.md) | COMSOL, transient FEA | Material-dependent rotor heating | Feb 2026 |
 | [Rainfall prediction](rainfall-prediction.md) | Least squares, regression, Python | Meteorological modelling in three Indian cities | Nov 2025 |
 
-Each summary documents the question, scope, contribution, findings, and materials needed for reproducibility. Original project source files and datasets are not yet included.
+[Run all four implementations](../REPRODUCING.md) · [Browse Python source](../code) · [Inspect generated results](../results)
+
+The original project findings are documented on each page. The runnable examples use stated assumptions and identify which inputs are synthetic.

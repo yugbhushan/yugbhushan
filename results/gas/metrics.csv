@@ -1,0 +1,2 @@
+source,train_rows,test_rows,accuracy,macro_f1,macro_ovr_auc,retained_components
+Seeded synthetic sensor signals,840,360,0.7722222222222223,0.7720255305047125,0.9523842592592592,15
