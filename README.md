@@ -1,20 +1,19 @@
 <p align="center">
-  <img src="assets/header.png" alt="Yug Bhushan — Chemical Engineering at IIT Delhi. Modelling physical systems. Learning from data." width="100%" />
+  <img src="assets/research-banner.webp" alt="Yug Bhushan | Chemical Engineering, IIT Delhi | Scientific computing, transport phenomena and machine learning" width="100%" />
 </p>
 
 <p align="center">
-  <a href="mailto:yugbhushan.iitd@gmail.com">Email</a> &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/yug-bhushan-532a8136b/">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="#selected-projects">Projects</a>
+  <a href="#selected-projects">Selected work</a> &nbsp; / &nbsp;
+  <a href="#technical-toolkit">Technical toolkit</a> &nbsp; / &nbsp;
+  <a href="https://www.linkedin.com/in/yug-bhushan-532a8136b/">LinkedIn</a> &nbsp; / &nbsp;
+  <a href="mailto:yugbhushan.iitd@gmail.com">Email</a>
 </p>
 
-### Hi, I'm Yug.
+## About
 
-I'm a **Chemical Engineering undergraduate at IIT Delhi**, interested in connecting transport phenomena, numerical modelling, and machine learning to practical engineering problems.
+I'm **Yug Bhushan**, a Chemical Engineering undergraduate at **IIT Delhi**. I work at the intersection of **physical modelling, numerical methods, and machine learning**, with projects in process monitoring, momentum transport, heat transfer, and environmental data analysis.
 
-My projects span gas-sensor classification, packed-bed pressure drop, transient heat transfer, and rainfall prediction. I enjoy working through the physics behind a model and using data to evaluate its behaviour.
-
-**Research interests:** computational chemical engineering · process monitoring · heat and momentum transport · scientific computing
+I'm interested in research that connects engineering fundamentals with computational tools—and in comparing model predictions with experimental observations.
 
 ## Selected projects
 
@@ -22,75 +21,87 @@ My projects span gas-sensor classification, packed-bed pressure drop, transient 
 <tr>
 <td width="50%" valign="top">
 
-### 01 / Chemical process monitoring
-**Machine learning · Gas sensors**
+### Gas-sensor process monitoring
+**Machine learning · Process monitoring**
 
-Processed **13.9K+ readings** from a 16-sensor array spanning six gas classes. Combined PCA with a Random Forest classifier to study sensor drift and classification.
+PCA and Random Forest classification using **13.9K+ observations**, 16 sensors, and six gas classes.
 
-**Reported test performance:** 97.8% accuracy · 97.6% F1 · 0.99 ROC-AUC
+**97.8% accuracy · 97.6% F1 · 0.99 ROC-AUC** on the reported held-out test set.
 
-[Read the project overview →](projects/gas-sensor-monitoring.md)
+[Explore the project →](projects/gas-sensor-monitoring.md)
 
 </td>
 <td width="50%" valign="top">
 
-### 02 / Momentum transport in packed beds
+### Packed-bed momentum transport
 **Transport phenomena · Python**
 
-Developed a pressure-drop model based on the Ergun equation, extended it using particle sphericity, and examined wall channeling with the Benenati–Brosilow correlation.
+Pressure-drop modelling with the Ergun equation, particle sphericity, and the Benenati–Brosilow wall-channeling correlation.
 
-**Reported comparison:** approximately 190% higher ΔP/L for crushed catalyst at sphericity 0.65 versus spherical beads under the studied conditions.
+**Focus:** how particle shape and near-wall flow influence bed design.
 
-[Read the project overview →](projects/packed-bed-transport.md)
+[Explore the project →](projects/packed-bed-transport.md)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 03 / Transient brake thermal analysis
+### Disc-brake thermal analysis
 **COMSOL · Finite element analysis**
 
-Modelled automotive disc-brake heating during panic braking, accounting for **conduction, convection, and radiation**. Compared Gray Cast Iron and Carbon-Ceramic (SiC) rotors.
+Transient rotor heating during panic braking, including **conduction, convection, and radiation**.
 
-**Focus:** transient temperature response and material-dependent thermal stability.
+**Comparison:** Gray Cast Iron and Carbon-Ceramic (SiC) rotor temperature response.
 
-[Read the project overview →](projects/brake-thermal-analysis.md)
+[Explore the project →](projects/brake-thermal-analysis.md)
 
 </td>
 <td width="50%" valign="top">
 
-### 04 / Rainfall prediction across Indian cities
-**Python · Multilinear regression**
+### Rainfall prediction in India
+**Regression · Scientific computing**
 
-Used meteorological data to model rainfall in **Delhi, Chennai, and Agra**. Implemented matrix least squares and evaluated results with NMSE and correlation.
+Matrix least-squares regression using meteorological data for **Delhi, Chennai, and Agra**.
 
-**Reported correlation:** R = 0.95–0.99 across the three cities.
+**Reported R = 0.95–0.99**, evaluated alongside normalised mean squared error.
 
-[Read the project overview →](projects/rainfall-prediction.md)
+[Explore the project →](projects/rainfall-prediction.md)
 
 </td>
 </tr>
 </table>
 
-## Tools I work with
+[Browse all project summaries](projects/README.md)
 
-| Area | Tools |
+## Technical toolkit
+
+| Area | Tools and methods |
 | :--- | :--- |
-| Scientific programming | Python, C, C++, MATLAB |
-| Data analysis & visualisation | NumPy, Pandas, Matplotlib |
-| Machine learning | Scikit-learn, PyTorch, TensorFlow |
-| Engineering modelling | COMSOL, Aspen HYSYS, Autodesk Inventor, ChemSketch |
-| Additional programming | HTML, Java, Visual Basic |
+| Scientific computing | Python, C++, C, MATLAB; least squares and numerical analysis |
+| Data analysis | NumPy, Pandas, Matplotlib; regression and statistical validation |
+| Machine learning | Scikit-learn; PCA, Random Forest classification, model evaluation |
+| Engineering simulation | COMSOL, Aspen HYSYS, Autodesk Inventor, ChemSketch |
 
-## Beyond the model
+<details>
+<summary>Additional tools and academic foundation</summary>
 
-- **Academic recognition:** top 1% in JEE Advanced and top 0.1% in JEE Main.
-- **Community:** alumni relations, entrepreneurship events, and campus career-services volunteering at IIT Delhi.
-- **Outside academics:** basketball and a silver medal in the Freshers General Championship.
+**Additional tools:** PyTorch, TensorFlow, HTML, Java, Visual Basic, Photoshop, Illustrator.
 
-## Let's connect
+**Coursework:** Transport Phenomena; Chemical Engineering Thermodynamics; Material and Energy Balances; Numerical Analysis for Chemical Engineers; Probability and Statistics; Linear Algebra and Differential Equations.
 
-I'm interested in research opportunities involving **computational modelling, data analysis, and chemical engineering**, including projects that connect simulations with experiments.
+</details>
 
-[Email me](mailto:yugbhushan.iitd@gmail.com) · [Connect on LinkedIn](https://www.linkedin.com/in/yug-bhushan-532a8136b/)
+## Education & involvement
+
+**Indian Institute of Technology Delhi** — Chemical Engineering undergraduate.
+
+- **Academic recognition:** top 1% in JEE Advanced and top 0.1% in JEE Main; qualified NSEC and NSEP in the top 1 percentile.
+- **Leadership:** alumni relations, Entrepreneurship Development Cell, and Office of Career Services at IIT Delhi.
+- **Beyond academics:** basketball and a silver medal in the Freshers General Championship.
+
+## Research & collaboration
+
+I'm interested in undergraduate research opportunities in **computational chemical engineering, process monitoring, and heat and momentum transport**, including projects with experimental components.
+
+**Contact:** [yugbhushan.iitd@gmail.com](mailto:yugbhushan.iitd@gmail.com) · [LinkedIn](https://www.linkedin.com/in/yug-bhushan-532a8136b/)

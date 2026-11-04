@@ -1,25 +1,41 @@
-# Transient Thermal Analysis of Automotive Disc Brakes
+# Transient Thermal Analysis of Disc Brakes
 
-**COMSOL · Finite element analysis · Heat transfer**  
+**Heat transfer / Finite element analysis / COMSOL**  
 February 2026
 
-[← Back to profile](../README.md)
+[Profile](../README.md) · [All projects](README.md)
 
-## The engineering problem
+## Engineering question
 
-Panic braking creates rapid thermal loading in a disc rotor. This project compared the transient temperature response of two rotor materials to investigate thermal behaviour under load.
+How does rotor material influence transient temperature response during panic braking?
 
-## Work completed
+## Simulation scope
 
-- Built a transient finite element model in COMSOL.
-- Included conduction, convection, and radiation.
-- Compared Gray Cast Iron with Carbon-Ceramic (SiC) rotors.
-- Examined peak temperatures during panic braking.
+| Component | Scope |
+| :--- | :--- |
+| Simulation | Transient finite element analysis in COMSOL |
+| Heat-transfer modes | Conduction, convection, and radiation |
+| Material comparison | Gray Cast Iron and Carbon-Ceramic (SiC) |
+| Loading scenario | Panic braking |
+| Main response | Peak temperature and transient heating |
+
+## My contribution
+
+1. Built the transient thermal finite element model.
+2. Included the three heat-transfer modes in the analysis.
+3. Compared the temperature response of the two rotor materials under braking.
+4. Assessed their relative thermal stability under the modelled load.
 
 ## Reported finding
 
-The CV describes superior thermal stability for the SiC rotor under the modelled loading conditions. No numerical peak temperatures or uncertainty estimates were supplied in the CV, so none are asserted here.
+The project comparison indicated superior thermal stability for the SiC rotor under the studied loading conditions. Numerical peak temperatures were not included in the supplied project summary.
 
-## Implementation status
+## Engineering relevance
 
-This page is a project summary. The COMSOL model, geometry, mesh study, material properties, braking heat input, boundary conditions, and temperature histories are not included here. Those details are needed to assess and reproduce the material comparison.
+The project applies heat-transfer modelling to a materials-selection problem under rapid thermal loading.
+
+## Reproducibility
+
+This repository currently contains the project summary. The original COMSOL model, geometry, mesh-convergence study, material properties, braking heat input, boundary conditions, and temperature histories are needed to assess and reproduce the comparison.
+
+*Project scope and findings are drawn from my CV; the simulation has not been independently rerun in this repository.*

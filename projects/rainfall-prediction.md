@@ -1,24 +1,41 @@
 # Rainfall Prediction Across Three Indian Cities
 
-**Python · Multilinear regression · Least squares**  
+**Scientific computing / Multilinear regression / Python**  
 November 2025
 
-[← Back to profile](../README.md)
+[Profile](../README.md) · [All projects](README.md)
 
-## The modelling problem
+## Modelling question
 
-This project used meteorological data to investigate rainfall prediction in Delhi, Chennai, and Agra.
+How can meteorological observations be used in a regression model of rainfall across Delhi, Chennai, and Agra?
 
-## Work completed
+## Project scope
 
-- Worked with meteorological records containing temperature, humidity, wind speed, pressure, and rainfall.
-- Implemented matrix least squares in Python to estimate regression coefficients.
-- Evaluated predictions with normalised mean squared error (NMSE) and the correlation coefficient R.
+| Component | Scope |
+| :--- | :--- |
+| Cities | Delhi, Chennai, Agra |
+| Data | Meteorological records containing temperature, humidity, wind speed, pressure, and rainfall |
+| Model | Multilinear regression |
+| Estimation | Matrix least squares in Python |
+| Evaluation | Normalised mean squared error (NMSE) and correlation coefficient (R) |
+
+## My contribution
+
+1. Built rainfall models from the meteorological data.
+2. Implemented matrix least squares for coefficient estimation.
+3. Compared predictions and observations using NMSE and R.
+4. Examined the results across all three cities.
 
 ## Reported result
 
-The CV reports **R = 0.95–0.99** across the three cities. Correlation is distinct from percentage accuracy; this page does not convert R into an accuracy claim.
+The project reported **R = 0.95–0.99** across the three cities. R is a correlation coefficient and should not be interpreted as percentage accuracy.
 
-## Implementation status
+## Engineering relevance
 
-This page is a project summary. The original data source, feature and target construction, forecast horizon, coefficients, split strategy, and evaluation plots are not included. These are needed to establish out-of-sample forecasting performance and rule out temporal leakage.
+The project combines environmental data analysis, linear algebra, and statistical model evaluation.
+
+## Reproducibility
+
+This repository currently contains the project summary. The original dataset source, feature and target definitions, forecast horizon, split strategy, regression coefficients, and evaluation plots are needed to reproduce the results and assess out-of-sample forecasting performance.
+
+*Project scope and results are drawn from my CV; the analysis has not been independently rerun in this repository.*
