@@ -72,7 +72,7 @@ Matrix least-squares regression using meteorological data for **Delhi, Chennai, 
 </tr>
 </table>
 
-[Browse the project portfolio](projects/README.md) · [Run all four examples](REPRODUCING.md) · [Python source](code) · [Generated figures and results](results)
+[Download standalone project sources](sources/README.md) · [Browse the project portfolio](projects/README.md) · [Run all four examples](REPRODUCING.md) · [Python source](code) · [Generated figures and results](results)
 
 Each project page distinguishes the original CV findings from the newly implemented example. The gas and rainfall demos use seeded synthetic data by default. The packed-bed and brake models use documented illustrative parameters.
 

@@ -5,6 +5,8 @@ July–October 2025
 
 [Profile](../README.md) · [All projects](README.md)
 
+[Download source ZIP](https://github.com/yugbhushan/yugbhushan/raw/refs/heads/main/sources/gas-sensor-monitoring/gas-sensor-monitoring.zip) · [Editable notebook](../sources/gas-sensor-monitoring/gas.ipynb)
+
 ## Research question
 
 How can multivariate gas-sensor readings be used to distinguish gas classes while accounting for changes in sensor response over time?

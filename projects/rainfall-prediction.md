@@ -5,6 +5,8 @@ November 2025
 
 [Profile](../README.md) · [All projects](README.md)
 
+[Download source ZIP](https://github.com/yugbhushan/yugbhushan/raw/refs/heads/main/sources/rainfall-prediction/rainfall-prediction.zip) · [Editable notebook](../sources/rainfall-prediction/rainfall.ipynb)
+
 ## Modelling question
 
 How can meteorological observations be used in a regression model of rainfall across Delhi, Chennai, and Agra?

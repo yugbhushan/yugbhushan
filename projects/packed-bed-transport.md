@@ -5,6 +5,8 @@ April 2026
 
 [Profile](../README.md) · [All projects](README.md)
 
+[Download source ZIP](https://github.com/yugbhushan/yugbhushan/raw/refs/heads/main/sources/packed-bed-transport/packed-bed-transport.zip) · [Editable notebook](../sources/packed-bed-transport/packed_bed.ipynb)
+
 ## Engineering question
 
 How do particle shape and wall channeling affect pressure drop and flow distribution in a packed bed?
