@@ -1,63 +1,23 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/yugbhushan/yugbhushan/main/assets/research-banner.webp" alt="Yug Bhushan — Chemical Engineering at IIT Delhi" width="100%" />
-</p>
+# Yug Bhushan
 
-<p align="center">
-  <a href="https://github.com/yugbhushan/yugbhushan/tree/main/projects">Projects</a> ·
-  <a href="https://github.com/yugbhushan/yugbhushan/tree/main/papers">Papers &amp; code</a> ·
-  <a href="https://github.com/yugbhushan/yugbhushan/blob/main/CV.md">Academic profile</a> ·
-  <a href="https://www.linkedin.com/in/yug-bhushan-532a8136b/">LinkedIn</a> ·
-  <a href="mailto:yugbhushan.iitd@gmail.com">Email</a>
-</p>
+I study chemical engineering at IIT Delhi. I like problems where I can start with a balance on paper and then use a few lines of Python to see what changes when I vary an assumption. I’m looking for a summer research internship where I can work on a model and compare it with measurements from the lab.
 
-## Hi, I'm Yug
+### What happens near the wall of a packed bed?
 
-I'm a **Chemical Engineering undergraduate at the Indian Institute of Technology Delhi**, with a **CGPA of 8.11/10** in my current CV. My interests connect transport phenomena, numerical modelling and machine learning: understanding the physics, implementing the model, and checking what the results establish.
+For a term paper with Parikshit and Shrish Kumar, we looked at how particle shape affects the pressure needed to push fluid through a bed. One detail I like about this problem is that knowing the average flow tells you very little about where the fluid goes. If the packing leaves more open space near the wall, more of the flow can pass through that part of the bed.
 
-I'm interested in research opportunities in **computational chemical engineering, process monitoring, and heat and momentum transport**, including work that connects simulation with experiments.
+The Python example below plots the two effects separately. On the left, the less spherical particles give a higher pressure drop at the same flow speed. On the right, the model predicts faster flow near the wall. Both plots use illustrative inputs.
 
-## Four projects, from theory to code
+<img src="https://raw.githubusercontent.com/yugbhushan/yugbhushan/main/results/packed-bed/figure.svg" width="720" alt="Two plots from the Python example: pressure drop against flow speed for two particle shapes, and local flow speed rising near the bed wall." />
 
-| Project | Engineering focus | Explore |
-| :--- | :--- | :--- |
-| **Gas-sensor process monitoring** | PCA and Random Forest for six gas classes; 16 sensors and 13.9K+ readings in the reported project | [Project](https://github.com/yugbhushan/yugbhushan/blob/main/projects/gas-sensor-monitoring.md) · [Paper & Python](https://github.com/yugbhushan/yugbhushan/tree/main/papers/gas-sensor-monitoring) |
-| **Momentum transport in packed beds** | Ergun pressure drop, particle sphericity and near-wall flow; collaborative term paper | [Project](https://github.com/yugbhushan/yugbhushan/blob/main/projects/packed-bed-transport.md) · [Paper & Python](https://github.com/yugbhushan/yugbhushan/tree/main/papers/packed-bed-transport) |
-| **Transient disc-brake heating** | Conduction, convection and radiation; COMSOL project with a Python finite-element verification example | [Project](https://github.com/yugbhushan/yugbhushan/blob/main/projects/brake-thermal-analysis.md) · [Paper & Python](https://github.com/yugbhushan/yugbhushan/tree/main/papers/brake-thermal-analysis) |
-| **Rainfall prediction** | Matrix least squares for Delhi, Chennai and Agra; chronological evaluation and forecast baselines | [Project](https://github.com/yugbhushan/yugbhushan/blob/main/projects/rainfall-prediction.md) · [Paper & Python](https://github.com/yugbhushan/yugbhushan/tree/main/papers/rainfall-prediction) |
+[Our term paper](https://github.com/yugbhushan/yugbhushan/blob/main/papers/packed-bed-transport/report.pdf) · [Python model](https://github.com/yugbhushan/yugbhushan/blob/main/code/packed_bed.py) · [Assumptions behind the plots](https://github.com/yugbhushan/yugbhushan/blob/main/projects/packed-bed-transport.md)
 
-**Reported project results:** gas classification — 97.8% accuracy, 97.6% F1 and 0.99 ROC-AUC; rainfall regression — correlation R = 0.95–0.99. These figures come from my CV and project descriptions. The available reconstruction code and synthetic examples do not independently reproduce those historical scores. [Evidence and source inventory](https://github.com/yugbhushan/yugbhushan/blob/main/PROVENANCE.md).
+### Other projects
 
-## Run and explore
+- **Gas sensors.** I used readings from 16 sensors to distinguish six gases with PCA and a Random Forest. The question I’d like to test further is how well a classifier trained on earlier measurements holds up as the sensors drift. [Paper and code](https://github.com/yugbhushan/yugbhushan/tree/main/papers/gas-sensor-monitoring)
+- **Disc brakes.** I compared cast iron and carbon-ceramic rotors in COMSOL during a sudden stop. The accompanying Python example follows heat through the rotor thickness and checks how much energy is stored or lost as the disc cools. [Paper and code](https://github.com/yugbhushan/yugbhushan/tree/main/papers/brake-thermal-analysis)
+- **Rainfall.** I fitted separate least-squares models for Delhi, Chennai and Agra. The example compares a next-day forecast with the simple guess that tomorrow gets the same rainfall as today. [Paper and code](https://github.com/yugbhushan/yugbhushan/tree/main/papers/rainfall-prediction)
 
-```bash
-git clone https://github.com/yugbhushan/yugbhushan.git
-cd yugbhushan
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python run_all.py
-python -m unittest discover -s tests -v
-```
+Outside class I play basketball for my hostel. You can reach me at [yugbhushan.iitd@gmail.com](mailto:yugbhushan.iitd@gmail.com).
 
-The four default examples run offline after installation. Gas and rainfall examples use seeded synthetic data; brake and packed-bed examples use explicit illustrative parameters. The term-paper pipelines also accept real observations in their documented formats.
-
-[Reproduction guide](https://github.com/yugbhushan/yugbhushan/blob/main/REPRODUCING.md) · [Python examples](https://github.com/yugbhushan/yugbhushan/tree/main/code) · [Notebooks & downloads](https://github.com/yugbhushan/yugbhushan/tree/main/sources) · [Figures & tables](https://github.com/yugbhushan/yugbhushan/tree/main/results) · [Editable LaTeX papers](https://github.com/yugbhushan/yugbhushan/tree/main/papers)
-
-## Technical toolkit
-
-| Area | Tools and methods |
-| :--- | :--- |
-| Scientific programming | Python, C, C++, MATLAB; matrix least squares and numerical methods |
-| Data and machine learning | NumPy, pandas, Matplotlib, scikit-learn; PCA, Random Forest, regression and validation |
-| Engineering tools | COMSOL Multiphysics, Aspen HYSYS, Autodesk Inventor, ChemSketch |
-| Additional CV-listed tools | PyTorch, TensorFlow, HTML, Java, Visual Basic, Photoshop, Illustrator |
-
-**Academic foundation:** Transport Phenomena, Chemical Engineering Thermodynamics, Material and Energy Balances, Numerical Analysis, Probability and Statistics, Linear Algebra and Differential Equations.
-
-## Beyond the projects
-
-- **Academic recognition:** top 1% in JEE Advanced, top 0.1% in JEE Main, and NSEC/NSEP qualification in the top 1 percentile, as listed in my CV.
-- **Campus involvement:** Alumni Relations Representative, Entrepreneurship Development Cell Executive, and Head Volunteer with the Office of Career Services at IIT Delhi.
-- **Sport:** basketball and a silver medal in the Freshers General Championship.
-
-**Let's connect:** [yugbhushan.iitd@gmail.com](mailto:yugbhushan.iitd@gmail.com) · [LinkedIn](https://www.linkedin.com/in/yug-bhushan-532a8136b/)
+[CV](https://github.com/yugbhushan/yugbhushan/blob/main/CV.md) · [LinkedIn](https://www.linkedin.com/in/yug-bhushan-532a8136b/) · [Run the examples](https://github.com/yugbhushan/yugbhushan/blob/main/REPRODUCING.md)
