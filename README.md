@@ -1,12 +1,18 @@
-<img src="https://raw.githubusercontent.com/yugbhushan/yugbhushan/main/assets/courtside.svg" width="100%" alt="Hey, I’m Yug." />
+# Yug Bhushan
 
-I study chemical engineering at IIT Delhi and play basketball for my hostel. This is where I keep the code and write-ups for my projects.
+**Chemical Engineering · Indian Institute of Technology Delhi**
 
-### A few things I’ve worked on
+I study heat and fluid flow and use Python to analyse experimental data. Two questions behind my recent projects are how rotor material affects heating during braking, and how reliably a sensor array can identify a gas as its readings drift over time.
 
-- **[Gas sensors](https://github.com/yugbhushan/yugbhushan/tree/main/papers/gas-sensor-monitoring)** — I trained a classifier to tell six gases apart using readings from 16 sensors.
-- **[Disc brakes](https://github.com/yugbhushan/yugbhushan/tree/main/papers/brake-thermal-analysis)** — I used COMSOL to compare how cast iron and carbon-ceramic rotors heat up during a sudden stop.
-- **[Rainfall in three cities](https://github.com/yugbhushan/yugbhushan/tree/main/papers/rainfall-prediction)** — I used daily weather data to model rainfall in Delhi, Chennai and Agra.
-- **[Flow through packed beds](https://github.com/yugbhushan/yugbhushan/tree/main/papers/packed-bed-transport)** — Parikshit, Shrish Kumar and I studied how the shape of the particles changes the pressure needed to push fluid through a bed.
+[CV](https://github.com/yugbhushan/yugbhushan/blob/main/CV.md) · [LinkedIn](https://www.linkedin.com/in/yug-bhushan-532a8136b/) · [yugbhushan.iitd@gmail.com](mailto:yugbhushan.iitd@gmail.com)
 
-[LinkedIn](https://www.linkedin.com/in/yug-bhushan-532a8136b/) · [Email](mailto:yugbhushan.iitd@gmail.com) · [CV](https://github.com/yugbhushan/yugbhushan/blob/main/CV.md)
+## Selected projects
+
+| Project | Focus | Materials |
+| :--- | :--- | :--- |
+| **Gas-sensor monitoring** | Used PCA and a random forest to classify six gases from a 16-sensor array. | [Paper](https://github.com/yugbhushan/yugbhushan/blob/main/papers/gas-sensor-monitoring/report.pdf) · [Code](https://github.com/yugbhushan/yugbhushan/blob/main/papers/gas-sensor-monitoring/gas_sensor_analysis.py) |
+| **Disc-brake heat transfer** | Modelled transient heating in COMSOL to compare cast iron and carbon-ceramic rotors during a sudden stop. | [Paper](https://github.com/yugbhushan/yugbhushan/blob/main/papers/brake-thermal-analysis/report.pdf) · [Python verification](https://github.com/yugbhushan/yugbhushan/blob/main/papers/brake-thermal-analysis/thermal_verification.py) |
+| **Packed-bed flow** | With Parikshit and Shrish Kumar, studied how particle shape affects pressure drop and how flow varies near the bed wall. | [Paper](https://github.com/yugbhushan/yugbhushan/blob/main/papers/packed-bed-transport/report.pdf) · [Code](https://github.com/yugbhushan/yugbhushan/blob/main/papers/packed-bed-transport/appendix.py) |
+| **Rainfall prediction** | Fitted least-squares models to weather data from Delhi, Chennai and Agra and evaluated the relationship between predicted and observed rainfall. | [Paper](https://github.com/yugbhushan/yugbhushan/blob/main/papers/rainfall-prediction/report.pdf) · [Code](https://github.com/yugbhushan/yugbhushan/blob/main/papers/rainfall-prediction/rainfall_analysis.py) |
+
+[Run the examples](https://github.com/yugbhushan/yugbhushan/blob/main/REPRODUCING.md) · [Data sources and model assumptions](https://github.com/yugbhushan/yugbhushan/blob/main/PROVENANCE.md)
