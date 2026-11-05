@@ -5,6 +5,8 @@ July–October 2025
 
 [Profile](../README.md) · [All projects](README.md)
 
+[Full term paper](../papers/gas-sensor-monitoring/report.pdf) · [Paper source and appendix code](../papers/gas-sensor-monitoring/README.md) · [Evidence inventory](../PROVENANCE.md)
+
 [Download source ZIP](https://github.com/yugbhushan/yugbhushan/raw/refs/heads/main/sources/gas-sensor-monitoring/gas-sensor-monitoring.zip) · [Editable notebook](../sources/gas-sensor-monitoring/gas.ipynb)
 
 ## Research question

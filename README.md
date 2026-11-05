@@ -1,109 +1,63 @@
 <p align="center">
-  <img src="assets/research-banner.webp" alt="Yug Bhushan | Chemical Engineering, IIT Delhi | Scientific computing, transport phenomena and machine learning" width="100%" />
+  <img src="https://raw.githubusercontent.com/yugbhushan/yugbhushan/main/assets/research-banner.webp" alt="Yug Bhushan — Chemical Engineering at IIT Delhi" width="100%" />
 </p>
 
 <p align="center">
-  <a href="#selected-projects">Selected work</a> &nbsp; / &nbsp;
-  <a href="#technical-toolkit">Technical toolkit</a> &nbsp; / &nbsp;
-  <a href="https://www.linkedin.com/in/yug-bhushan-532a8136b/">LinkedIn</a> &nbsp; / &nbsp;
+  <a href="https://github.com/yugbhushan/yugbhushan/tree/main/projects">Projects</a> ·
+  <a href="https://github.com/yugbhushan/yugbhushan/tree/main/papers">Papers &amp; code</a> ·
+  <a href="https://github.com/yugbhushan/yugbhushan/blob/main/CV.md">Academic profile</a> ·
+  <a href="https://www.linkedin.com/in/yug-bhushan-532a8136b/">LinkedIn</a> ·
   <a href="mailto:yugbhushan.iitd@gmail.com">Email</a>
 </p>
 
-## About
+## Hi, I'm Yug
 
-I'm **Yug Bhushan**, a Chemical Engineering undergraduate at **IIT Delhi**. I work at the intersection of **physical modelling, numerical methods, and machine learning**, with projects in process monitoring, momentum transport, heat transfer, and environmental data analysis.
+I'm a **Chemical Engineering undergraduate at the Indian Institute of Technology Delhi**, with a **CGPA of 8.11/10** in my current CV. My interests connect transport phenomena, numerical modelling and machine learning: understanding the physics, implementing the model, and checking what the results establish.
 
-I'm interested in research that connects engineering fundamentals with computational tools—and in comparing model predictions with experimental observations.
+I'm interested in research opportunities in **computational chemical engineering, process monitoring, and heat and momentum transport**, including work that connects simulation with experiments.
 
-## Selected projects
+## Four projects, from theory to code
 
-<table>
-<tr>
-<td width="50%" valign="top">
+| Project | Engineering focus | Explore |
+| :--- | :--- | :--- |
+| **Gas-sensor process monitoring** | PCA and Random Forest for six gas classes; 16 sensors and 13.9K+ readings in the reported project | [Project](https://github.com/yugbhushan/yugbhushan/blob/main/projects/gas-sensor-monitoring.md) · [Paper & Python](https://github.com/yugbhushan/yugbhushan/tree/main/papers/gas-sensor-monitoring) |
+| **Momentum transport in packed beds** | Ergun pressure drop, particle sphericity and near-wall flow; collaborative term paper | [Project](https://github.com/yugbhushan/yugbhushan/blob/main/projects/packed-bed-transport.md) · [Paper & Python](https://github.com/yugbhushan/yugbhushan/tree/main/papers/packed-bed-transport) |
+| **Transient disc-brake heating** | Conduction, convection and radiation; COMSOL project with a Python finite-element verification example | [Project](https://github.com/yugbhushan/yugbhushan/blob/main/projects/brake-thermal-analysis.md) · [Paper & Python](https://github.com/yugbhushan/yugbhushan/tree/main/papers/brake-thermal-analysis) |
+| **Rainfall prediction** | Matrix least squares for Delhi, Chennai and Agra; chronological evaluation and forecast baselines | [Project](https://github.com/yugbhushan/yugbhushan/blob/main/projects/rainfall-prediction.md) · [Paper & Python](https://github.com/yugbhushan/yugbhushan/tree/main/papers/rainfall-prediction) |
 
-### Gas-sensor process monitoring
-**Machine learning · Process monitoring**
+**Reported project results:** gas classification — 97.8% accuracy, 97.6% F1 and 0.99 ROC-AUC; rainfall regression — correlation R = 0.95–0.99. These figures come from my CV and project descriptions. The available reconstruction code and synthetic examples do not independently reproduce those historical scores. [Evidence and source inventory](https://github.com/yugbhushan/yugbhushan/blob/main/PROVENANCE.md).
 
-PCA and Random Forest classification using **13.9K+ observations**, 16 sensors, and six gas classes.
+## Run and explore
 
-**97.8% accuracy · 97.6% F1 · 0.99 ROC-AUC** on the reported held-out test set.
+```bash
+git clone https://github.com/yugbhushan/yugbhushan.git
+cd yugbhushan
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python run_all.py
+python -m unittest discover -s tests -v
+```
 
-[Explore the project →](projects/gas-sensor-monitoring.md)
+The four default examples run offline after installation. Gas and rainfall examples use seeded synthetic data; brake and packed-bed examples use explicit illustrative parameters. The term-paper pipelines also accept real observations in their documented formats.
 
-</td>
-<td width="50%" valign="top">
-
-### Packed-bed momentum transport
-**Transport phenomena · Python**
-
-Pressure-drop modelling with the Ergun equation, particle sphericity, and the Benenati–Brosilow wall-channeling correlation.
-
-**Focus:** how particle shape and near-wall flow influence bed design.
-
-[Explore the project →](projects/packed-bed-transport.md)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### Disc-brake thermal analysis
-**COMSOL · Finite element analysis**
-
-Transient rotor heating during panic braking, including **conduction, convection, and radiation**.
-
-**Comparison:** Gray Cast Iron and Carbon-Ceramic (SiC) rotor temperature response.
-
-[Explore the project →](projects/brake-thermal-analysis.md)
-
-</td>
-<td width="50%" valign="top">
-
-### Rainfall prediction in India
-**Regression · Scientific computing**
-
-Matrix least-squares regression using meteorological data for **Delhi, Chennai, and Agra**.
-
-**Reported R = 0.95–0.99**, evaluated alongside normalised mean squared error.
-
-[Explore the project →](projects/rainfall-prediction.md)
-
-</td>
-</tr>
-</table>
-
-[Download standalone project sources](sources/README.md) · [Browse the project portfolio](projects/README.md) · [Run all four examples](REPRODUCING.md) · [Python source](code) · [Generated figures and results](results)
-
-Each project page distinguishes the original CV findings from the newly implemented example. The gas and rainfall demos use seeded synthetic data by default. The packed-bed and brake models use documented illustrative parameters.
+[Reproduction guide](https://github.com/yugbhushan/yugbhushan/blob/main/REPRODUCING.md) · [Python examples](https://github.com/yugbhushan/yugbhushan/tree/main/code) · [Notebooks & downloads](https://github.com/yugbhushan/yugbhushan/tree/main/sources) · [Figures & tables](https://github.com/yugbhushan/yugbhushan/tree/main/results) · [Editable LaTeX papers](https://github.com/yugbhushan/yugbhushan/tree/main/papers)
 
 ## Technical toolkit
 
 | Area | Tools and methods |
 | :--- | :--- |
-| Scientific computing | Python, C++, C, MATLAB; least squares and numerical analysis |
-| Data analysis | NumPy, Pandas, Matplotlib; regression and statistical validation |
-| Machine learning | Scikit-learn; PCA, Random Forest classification, model evaluation |
-| Engineering simulation | COMSOL, Aspen HYSYS, Autodesk Inventor, ChemSketch |
+| Scientific programming | Python, C, C++, MATLAB; matrix least squares and numerical methods |
+| Data and machine learning | NumPy, pandas, Matplotlib, scikit-learn; PCA, Random Forest, regression and validation |
+| Engineering tools | COMSOL Multiphysics, Aspen HYSYS, Autodesk Inventor, ChemSketch |
+| Additional CV-listed tools | PyTorch, TensorFlow, HTML, Java, Visual Basic, Photoshop, Illustrator |
 
-<details>
-<summary>Additional tools and academic foundation</summary>
+**Academic foundation:** Transport Phenomena, Chemical Engineering Thermodynamics, Material and Energy Balances, Numerical Analysis, Probability and Statistics, Linear Algebra and Differential Equations.
 
-**Additional tools:** PyTorch, TensorFlow, HTML, Java, Visual Basic, Photoshop, Illustrator.
+## Beyond the projects
 
-**Coursework:** Transport Phenomena; Chemical Engineering Thermodynamics; Material and Energy Balances; Numerical Analysis for Chemical Engineers; Probability and Statistics; Linear Algebra and Differential Equations.
+- **Academic recognition:** top 1% in JEE Advanced, top 0.1% in JEE Main, and NSEC/NSEP qualification in the top 1 percentile, as listed in my CV.
+- **Campus involvement:** Alumni Relations Representative, Entrepreneurship Development Cell Executive, and Head Volunteer with the Office of Career Services at IIT Delhi.
+- **Sport:** basketball and a silver medal in the Freshers General Championship.
 
-</details>
-
-## Education & involvement
-
-**Indian Institute of Technology Delhi** — Chemical Engineering undergraduate.
-
-- **Academic recognition:** top 1% in JEE Advanced and top 0.1% in JEE Main; qualified NSEC and NSEP in the top 1 percentile.
-- **Leadership:** alumni relations, Entrepreneurship Development Cell, and Office of Career Services at IIT Delhi.
-- **Beyond academics:** basketball and a silver medal in the Freshers General Championship.
-
-## Research & collaboration
-
-I'm interested in undergraduate research opportunities in **computational chemical engineering, process monitoring, and heat and momentum transport**, including projects with experimental components.
-
-**Contact:** [yugbhushan.iitd@gmail.com](mailto:yugbhushan.iitd@gmail.com) · [LinkedIn](https://www.linkedin.com/in/yug-bhushan-532a8136b/)
+**Let's connect:** [yugbhushan.iitd@gmail.com](mailto:yugbhushan.iitd@gmail.com) · [LinkedIn](https://www.linkedin.com/in/yug-bhushan-532a8136b/)

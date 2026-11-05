@@ -2,3 +2,11 @@
 __pycache__/
 *.py[cod]
 runs/
+
+verification_outputs/
+*.aux
+*.log
+*.toc
+*.out
+.env
+.env.*

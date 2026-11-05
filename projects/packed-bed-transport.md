@@ -3,7 +3,11 @@
 **Transport phenomena / Pressure-drop modelling / Python**  
 April 2026
 
+**Collaborative term paper:** Parikshit, Shrish Kumar and Yug Bhushan.
+
 [Profile](../README.md) · [All projects](README.md)
+
+[Full term paper](../papers/packed-bed-transport/report.pdf) · [Paper source and appendix code](../papers/packed-bed-transport/README.md) · [Evidence inventory](../PROVENANCE.md)
 
 [Download source ZIP](https://github.com/yugbhushan/yugbhushan/raw/refs/heads/main/sources/packed-bed-transport/packed-bed-transport.zip) · [Editable notebook](../sources/packed-bed-transport/packed_bed.ipynb)
 
@@ -31,7 +35,7 @@ How do particle shape and wall channeling affect pressure drop and flow distribu
 
 Crushed catalyst at a sphericity of **0.65** produced approximately **190% higher pressure drop per unit length** than spherical beads under the studied conditions.
 
-This percentage describes the specific model comparison; it is not a general result for every bed geometry or flow regime.
+This is a reported comparison from the supplied paper, not a reproduced result. Its partial appendix does not establish this percentage; the fixed-input Ergun limits below show why additional original inputs or a corrected comparison are needed.
 
 ## Engineering relevance
 

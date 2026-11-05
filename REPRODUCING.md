@@ -26,3 +26,11 @@ After installation the default examples run offline. Each command writes only to
 | [Rainfall](projects/rainfall-prediction.md) | `python code/rainfall.py` | Seeded daily weather for three city labels | Forecasts, coefficients, skill against persistence |
 
 The gas model also accepts extracted UCI batch files. The rainfall model accepts a daily-observations CSV. Instructions and input units are on their respective project pages. The original notebooks, weather measurements and native COMSOL model were unavailable when these examples were built.
+
+## Uploaded term-paper implementations
+
+The [papers directory](papers/README.md) adds the four supplied PDFs, three complete LaTeX packages and the available Python appendices. These are separate from the older examples above. Follow each paper directory's README for its exact CSV schema and commands. In particular, the gas paper trains on batches 1–6; the older gas example uses 1–7.
+
+The test suite checks both code families, including missing calendar dates, invalid sensor rows, undefined AUC, and thermal energy conservation. Synthetic execution fixtures test program behavior without claiming to reproduce historical scores.
+
+The GitHub Actions workflow repeats the Python checks on pushes and pull requests. COMSOL execution and LaTeX compilation require separate installations and are not part of Python CI.

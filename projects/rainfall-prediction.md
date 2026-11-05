@@ -5,6 +5,8 @@ November 2025
 
 [Profile](../README.md) · [All projects](README.md)
 
+[Full term paper](../papers/rainfall-prediction/report.pdf) · [Paper source and appendix code](../papers/rainfall-prediction/README.md) · [Evidence inventory](../PROVENANCE.md)
+
 [Download source ZIP](https://github.com/yugbhushan/yugbhushan/raw/refs/heads/main/sources/rainfall-prediction/rainfall-prediction.zip) · [Editable notebook](../sources/rainfall-prediction/rainfall.ipynb)
 
 ## Modelling question

@@ -5,6 +5,8 @@ February 2026
 
 [Profile](../README.md) · [All projects](README.md)
 
+[Full term paper](../papers/brake-thermal-analysis/report.pdf) · [Paper source and appendix code](../papers/brake-thermal-analysis/README.md) · [Evidence inventory](../PROVENANCE.md)
+
 [Download source ZIP](https://github.com/yugbhushan/yugbhushan/raw/refs/heads/main/sources/brake-thermal-analysis/brake-thermal-analysis.zip) · [Editable notebook](../sources/brake-thermal-analysis/brake.ipynb) · [COMSOL Java source](../native/comsol/DiscBrakeStudy.java)
 
 ## Engineering question

@@ -14,3 +14,5 @@ A collection of my academic project summaries in chemical engineering, scientifi
 [Run all four implementations](../REPRODUCING.md) · [Browse Python source](../code) · [Inspect generated results](../results)
 
 The original project findings are documented on each page. The runnable examples use stated assumptions and identify which inputs are synthetic.
+
+[All four term papers and their available source code](../papers/README.md) · [Academic profile](../CV.md) · [Evidence inventory](../PROVENANCE.md)
