@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 166" width="960" height="166" role="img" aria-labelledby="t d">
+<title id="t">Hey, I’m Yug.</title><desc id="d">A greeting beside a basketball half court drawn in warm cream on deep green.</desc>
+<defs><clipPath id="court"><rect x="565" y="0" width="395" height="166"/></clipPath></defs>
+<rect width="960" height="166" rx="14" fill="#173d34"/>
+<g clip-path="url(#court)" fill="none" stroke="#94baa0" stroke-width="2.2">
+<g transform="translate(743 89) rotate(-15)">
+<rect x="-154" y="-94" width="310" height="188" rx="1"/>
+<path d="M0 -94V94"/><circle r="23"/>
+<path d="M156 -42H109V42H156" fill="#285242"/><path d="M109 -42a42 42 0 0 0 0 84"/>
+<path d="M156 -77H130a78 78 0 0 0 0 154h26"/><path d="M145 -14v28" stroke="#f4dac1" stroke-width="3"/><circle cx="136" cy="0" r="8" stroke="#f4dac1" stroke-width="2.5"/>
+</g></g>
+<g transform="translate(737 109) rotate(-22)" stroke="#633a2d" stroke-width="2.5" fill="none">
+<circle r="18" fill="#e9a175"/><path d="M-18 0H18M0 -18V18M-12 -13Q4 0 -12 13M12 -13Q-4 0 12 13"/></g>
+<text x="42" y="103" fill="#fff1d9" font-family="Georgia, 'DejaVu Serif', serif" font-weight="bold" font-size="59">Hey, I’m Yug.</text>
+</svg>
